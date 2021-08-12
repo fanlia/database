@@ -20,3 +20,12 @@ services:
       - 'discovery.type=single-node'
     volumes:
       - './install-elasticsearch-plugins-for-container.sh:/tmp/install-plugins.sh'
+  elasticsearch7:
+    image: elasticsearch:7.14.0
+    ports:
+      - '30107:9200'
+    environment:
+      - 'ES_JAVA_OPTS=-Xms256m -Xmx256m'
+      - 'discovery.type=single-node'
+    volumes:
+      - './install-elasticsearch-plugins-for-container.sh:/tmp/install-plugins.sh'

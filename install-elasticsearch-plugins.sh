@@ -1,5 +1,5 @@
 
-for version in 5.6.16 6.8.15
+for version in 5.6.16 6.8.15 7.14.0
 do
     echo $version elasticsearch${version%%.*}
     docker-compose exec -e version=${version} elasticsearch${version%%.*} sh /tmp/install-plugins.sh
