@@ -1,7 +1,11 @@
 
-for version in 5.6.16 6.8.16
+cd elasticsearch-plugins
+
+for version in 5.6.8 6.8.16
 do
     echo $version elasticsearch${version%%.*}
-    docker-compose exec -e version=${version} elasticsearch${version%%.*} sh /tmp/install-plugins.sh
+    test -f elasticsearch-analysis-ik-$version.zip || wget https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v$version/elasticsearch-analysis-ik-$version.zip
+    test -f elasticsearch-analysis-stconvert-$version.zip || wget https://github.com/medcl/elasticsearch-analysis-stconvert/releases/download/v$version/elasticsearch-analysis-stconvert-$version.zip
+    docker-compose exec -e version=${version} elasticsearch${version%%.*} sh /tmp/elasticsearch-plugins/install-plugins.sh
     docker-compose restart elasticsearch${version%%.*}
 done
