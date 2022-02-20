@@ -1,7 +1,7 @@
 
 cd elasticsearch-plugins
 
-for version in 5.6.8 6.8.16 7.16.2
+for version in 5.6.8 6.8.16
 do
     echo $version elasticsearch${version%%.*}
     test -f elasticsearch-analysis-ik-$version.zip || wget https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v$version/elasticsearch-analysis-ik-$version.zip
