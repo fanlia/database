@@ -22,13 +22,13 @@ services:
       - 'discovery.type=single-node'
     volumes:
       - './elasticsearch-plugins:/tmp/elasticsearch-plugins'
-  elasticsearch8:
-    image: elasticsearch:8.1.2
-    ports:
-      - '30108:9200'
-    environment:
-      - 'ES_JAVA_OPTS=-Xms256m -Xmx256m'
-      - 'discovery.type=single-node'
-      - 'xpack.security.enabled=false'
-    volumes:
-      - './elasticsearch-plugins:/tmp/elasticsearch-plugins'
+  # elasticsearch8:
+  #   image: elasticsearch:8.1.2
+  #   ports:
+  #     - '30108:9200'
+  #   environment:
+  #     - 'ES_JAVA_OPTS=-Xms256m -Xmx256m'
+  #     - 'discovery.type=single-node'
+  #     - 'xpack.security.enabled=false'
+  #   volumes:
+  #     - './elasticsearch-plugins:/tmp/elasticsearch-plugins'
