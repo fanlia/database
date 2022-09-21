@@ -10,7 +10,7 @@ do
     sudo docker-compose restart elasticsearch${version%%.*}
 done
 
-for version in 7.17.2 8.1.2
+for version in 7.17.2
 do
     echo $version elasticsearch${version%%.*}
     test -f analysis-hao-v$version.zip || wget https://github.com/tenlee2012/elasticsearch-analysis-hao/releases/download/v$version/analysis-hao-v$version.zip
