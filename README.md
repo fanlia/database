@@ -3,8 +3,10 @@
 install databases for development with docker-compose
 
 - mongodb:3
+- mysql:8
 - elasticsearch:5
 - elasticsearch:7
+- elasticsearch:8
 
 ## getting started
 
