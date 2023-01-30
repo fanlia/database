@@ -10,13 +10,15 @@ services:
     ports:
       - '5432:5432'
     environment:
-      POSTGRES_PASSWORD: root
+      - 'POSTGRES_DB=postgres'
+      - 'POSTGRES_USER=root'
+      - 'POSTGRES_PASSWORD=root'
   mysql8:
     image: mysql:8
     ports:
-      - "3306:3306"
+      - '3306:3306'
     environment:
-      MYSQL_ROOT_PASSWORD: root
+      - 'MYSQL_ROOT_PASSWORD=root'
   elasticsearch5:
     image: elasticsearch:5.6.8-alpine
     ports:
