@@ -3,6 +3,7 @@
 install databases for development with docker-compose
 
 - mongodb:3
+- postgres:14
 - mysql:8
 - elasticsearch:5
 - elasticsearch:7
