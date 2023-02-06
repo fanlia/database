@@ -5,6 +5,10 @@ services:
     image: mongo:3
     ports:
       - '27017:27017'
+  adminer:
+    image: adminer
+    ports:
+      - '30080:8080'
   postgres14:
     image: postgres:14
     ports:

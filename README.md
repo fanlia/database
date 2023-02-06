@@ -2,6 +2,7 @@
 
 install databases for development with docker-compose
 
+- adminer
 - mongodb:3
 - postgres:14
 - mysql:8
