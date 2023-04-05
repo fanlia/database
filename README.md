@@ -2,6 +2,7 @@
 
 install databases for development with docker-compose
 
+- redis
 - adminer
 - mongodb:3
 - postgres:14
