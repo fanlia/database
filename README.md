@@ -24,3 +24,21 @@ sh install-elasticsearch-plugins.sh
 docker-compose down -v
 ```
 
+## docker network config
+
+```sh
+vim /etc/docker/daemon.json 
+
+```
+
+```json
+{
+    "bip": "192.168.1.5/24",
+    "default-address-pools": [
+        {
+            "base": "192.168.1.5/16",
+            "size": 24
+        }
+    ] 
+}
+```
