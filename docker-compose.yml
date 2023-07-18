@@ -13,8 +13,8 @@ services:
     image: adminer
     ports:
       - '30080:8080'
-  postgres14:
-    image: postgres:14
+  postgres15:
+    image: postgres:15
     ports:
       - '5432:5432'
     environment:
