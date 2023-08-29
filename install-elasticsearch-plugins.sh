@@ -1,7 +1,7 @@
 
 cd elasticsearch-plugins
 
-for version in 5.6.8
+for version in 5.6.16
 do
     echo $version elasticsearch${version%%.*}
     test -f elasticsearch-analysis-ik-$version.zip || wget https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v$version/elasticsearch-analysis-ik-$version.zip
@@ -10,7 +10,7 @@ do
     sudo docker-compose restart elasticsearch${version%%.*}
 done
 
-for version in 5.6.8 7.17.2
+for version in 5.6.16 7.17.2
 do
     echo $version elasticsearch${version%%.*}
     test -f analysis-hao-v$version.zip || wget https://github.com/tenlee2012/elasticsearch-analysis-hao/releases/download/v$version/analysis-hao-v$version.zip
