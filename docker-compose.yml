@@ -38,7 +38,7 @@ services:
     volumes:
       - './elasticsearch-plugins:/tmp/elasticsearch-plugins'
   elasticsearch7:
-    image: elasticsearch:7.17.2
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.0
     ports:
       - '30107:9200'
     environment:
