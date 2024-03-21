@@ -9,6 +9,10 @@ services:
     image: mongo:3
     ports:
       - '27017:27017'
+  mongo:
+    image: mongo:latest
+    ports:
+      - '27018:27017'
   adminer:
     image: adminer
     ports:
