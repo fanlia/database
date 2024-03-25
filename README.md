@@ -3,13 +3,10 @@
 install databases for development with docker-compose
 
 - redis
-- adminer
 - mongodb:3
 - postgres:15
-- mysql:8
 - elasticsearch:5
 - elasticsearch:7
-- elasticsearch:8
 
 ## getting started
 
