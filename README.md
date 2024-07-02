@@ -32,6 +32,9 @@ vim /etc/docker/daemon.json
 ```json
 {
     "bip": "192.168.1.5/24",
+    "registry-mirrors": [
+        "https://docker.m.daocloud.io"
+    ],
     "default-address-pools": [
         {
             "base": "192.168.1.5/16",
