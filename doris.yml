@@ -1,0 +1,9 @@
+
+services:
+  doris3:
+    image: dockerproxy.cn/yagagagaga/doris-standalone
+    privileged: true
+    ports:
+      - '8030:8030'
+      - '8040:8040'
+      - '9030:9030'
