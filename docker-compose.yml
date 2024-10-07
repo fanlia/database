@@ -44,7 +44,7 @@ services:
     volumes:
       - './elasticsearch-plugins:/tmp/elasticsearch-plugins'
   elasticsearch8:
-    image: docker.elastic.co/elasticsearch/elasticsearch:8.13.2
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.15.2
     ports:
       - '30108:9200'
     environment:
