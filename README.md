@@ -32,7 +32,7 @@ vim /etc/docker/daemon.json
 
 ```json
 {
-    "bip": "192.168.1.5/24",
+    "bip": "192.168.254.5/24",
     "registry-mirrors": [
         "https://registry.dockermirror.com",
         "https://docker.m.daocloud.io"
