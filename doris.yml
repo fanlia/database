@@ -1,4 +1,3 @@
-
 services:
   doris3:
     image: dockerproxy.cn/yagagagaga/doris-standalone
