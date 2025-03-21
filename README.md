@@ -26,23 +26,22 @@ docker-compose down -v
 ## docker network config
 
 ```sh
-vim /etc/docker/daemon.json 
+vim /etc/docker/daemon.json
 
 ```
 
 ```json
 {
-    "bip": "192.168.254.5/24",
-    "registry-mirrors": [
-        "https://registry.dockermirror.com",
-        "https://docker.m.daocloud.io"
-    ],
-    "default-address-pools": [
-        {
-            "base": "192.168.1.5/16",
-            "size": 24
-        }
-    ] 
+  "registry-mirrors": [
+    "https://registry.dockermirror.com",
+    "https://docker.m.daocloud.io"
+  ],
+  "bip": "192.168.254.1/24",
+  "default-address-pools": [
+    {
+      "base": "172.10.0.0/16",
+      "size": 24
+    }
+  ]
 }
 ```
-
